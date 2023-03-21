@@ -5,7 +5,7 @@ const root = document.getElementById('root')
 const button = document.querySelector('.checkout-btn');
 
 button.addEventListener('click', () => {
-    fetch('https://richkingsserver.onrender.com/create-checkout-session', {
+    fetch('http://localhost:8000/create-checkout-session', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
